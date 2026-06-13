@@ -87,26 +87,15 @@ body{
 /* HERO SECTION */
 
 .hero{
-
-    min-height:100dvh;
-
+    min-height:100vh;
     background-image:url("assets/photos/meetup-1.jpg");
-
     background-size:cover;
-
-    background-position:60% center;
-
-    background-repeat:no-repeat;
+    background-position:center;
 
     display:flex;
-
     align-items:center;
 
-    justify-content:center;
-
-    position:relative;
-
-    padding:20px;
+    padding-left:8%;
 }
 
 .hero-content{
@@ -395,7 +384,10 @@ transform:scale(1);
 @media(max-width:768px){
 
     .hero{
-        padding-left:0;
+        background-size:contain;
+        background-position:center top;
+        background-repeat:no-repeat;
+        background-color:#0d0d0d;
         padding:0 6%;
     }
 
@@ -487,41 +479,33 @@ transform:scale(1);
     }
 }
 
-@media(max-width:768px){
+@media(max-width:420px){
 
-    .hero{
-
-        min-height:100dvh;
-
-        background-position:60% center;
-
-        padding:20px;
+    .login-box h1{
+        font-size:2.2rem;
     }
 
-    .hero-content{
-
-        margin-top:-60px;
+    .couple-name,
+    .hero h1{
+        font-size:1.9rem;
     }
 
-    .couple-name{
-
-        font-size:2.6rem;
-
-        line-height:1.3;
-
-        white-space:normal;
+    .chapter h2{
+        font-size:1.7rem;
     }
 
-    .hero-date{
-
-        font-size:1rem;
+    .chapter-card{
+        padding:25px 15px;
     }
 
-    .hero-subtitle{
-
-        font-size:1rem;
+    #countdown div{
+        min-width:70px;
+        padding:15px;
     }
 
+    #countdown span{
+        font-size:1.6rem;
+    }
 }
 
 /* ==========================
