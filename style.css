@@ -1,0 +1,691 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d0d0d;
+    color:#f8f5ef;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+}
+
+/* LOGIN SCREEN */
+
+#login-screen{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0d0d0d;
+    padding:40px 20px;
+}
+
+.login-box{
+    width:90%;
+    max-width:450px;
+    text-align:center;
+}
+
+.login-box h1{
+    color:#d4af37;
+    margin-bottom:20px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+}
+
+.login-box p{
+    margin:10px 0;
+}
+
+.login-box input{
+    width:100%;
+    padding:15px;
+    margin-top:20px;
+    background:#1a1a1a;
+    border:1px solid #d4af37;
+    color:white;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.login-box button{
+    margin-top:20px;
+    padding:15px 40px;
+    background:#d4af37;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.login-box button:hover{
+    opacity:0.9;
+}
+
+#error{
+    margin-top:15px;
+    color:#ff8c8c;
+}
+
+/* MAIN CONTENT */
+
+#main-content{
+    display:none;
+}
+
+#story-content{
+    display:none;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+    min-height:100vh;
+    background-image:url("assets/photos/meetup-1.jpg");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:8%;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    text-align:center;
+
+    width:100%;
+    max-width:900px;
+
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:5.5rem;
+    color:#d4af37;
+    line-height:1.1;
+}
+
+.couple-name{
+    font-size:4.5rem;
+    color:#d4af37;
+    font-family:'Cormorant Garamond', serif;
+    text-shadow:0 0 20px rgba(212,175,55,0.5);
+}
+
+.hero-subtitle{
+    font-size:1.2rem;
+    color:white;
+    font-style:italic;
+    margin-top:10px;
+}
+.hero-date{
+    font-size:1.2rem;
+    margin:20px 0 35px;
+    color:white;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.photo-caption{
+
+    color:#ffb6c1;
+
+    font-style:italic;
+
+    margin-top:-10px;
+
+    margin-bottom:30px;
+
+    font-size:1.1rem;
+}
+
+.love-quote{
+
+    max-width:650px;
+
+    margin:30px auto;
+
+    text-align:center;
+
+    font-style:italic;
+
+    color:#ffb6c1;
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+}
+
+.highlight-love{
+
+    color:#ff8fb1;
+
+    font-weight:600;
+
+    font-style:italic;
+
+    display:block;
+
+    margin-top:15px;
+
+    font-size:1.15rem;
+}
+
+.icecream-line{
+
+    color:#ff8fb1;
+
+    font-weight:700;
+
+    font-style:italic;
+
+    display:block;
+
+    margin:12px 0;
+
+    font-size:1.2rem;
+
+    text-align:center;
+}
+
+.hero-overlay{
+    position:relative;
+    z-index:2;
+    padding:50px;
+    max-width:700px;
+
+    background:rgba(0,0,0,0.35);
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:20px;
+}
+
+.hero h1 span{
+    display:inline-block;
+    animation:heartbeat 2s infinite;
+}
+
+@keyframes heartbeat{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.15);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+.hero h1{
+    font-size:3rem;
+    color:#d4af37;
+    font-family:'Cormorant Garamond', serif;
+    margin-bottom:20px;
+    white-space:nowrap;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.date-line{
+    color:#f8f5ef;
+    font-size:1rem;
+    letter-spacing:1px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#d4af37;
+    font-style:italic;
+    margin-bottom:25px;
+}
+
+.hero button{
+    padding:15px 35px;
+    background:#d4af37;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.hero button:hover{
+    opacity:0.9;
+}
+
+/* CHAPTERS */
+
+.chapter h2{
+
+    text-align:center;
+
+    color:#d4af37;
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+}
+
+.chapter h3{
+
+    text-align:center;
+
+    color:#d4af37;
+
+    font-size:2rem;
+
+    margin:60px 0 25px;
+
+    font-family:'Cormorant Garamond', serif;
+
+    letter-spacing:1px;
+}
+
+.chapter p{
+    font-size:1.1rem;
+}
+
+/* COUNTDOWN */
+
+.countdown-section{
+    padding:120px 10%;
+    text-align:center;
+}
+
+.countdown-section h2{
+    font-size:3rem;
+    color:#d4af37;
+    margin-bottom:50px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+#countdown{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+#countdown div{
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:15px;
+    min-width:120px;
+    border:1px solid rgba(212,175,55,0.3);
+}
+
+#countdown span{
+    font-size:2.5rem;
+    color:#d4af37;
+    font-weight:bold;
+}
+
+#countdown p{
+    margin-top:10px;
+}
+
+/* FINAL LETTER */
+
+.final-letter{
+    padding:120px 10%;
+    text-align:center;
+    line-height:2.5;
+}
+
+.final-letter h2{
+    font-size:3rem;
+    color:#d4af37;
+    margin-bottom:40px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.final-letter p{
+    font-size:1.15rem;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero{
+        padding-left:0;
+        padding:0 6%;
+    }
+
+    .hero h1{
+        font-size:2.4rem;
+        white-space:normal;
+        gap:8px;
+    }
+
+    .hero-date,
+    .hero-subtitle{
+        font-size:1rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .chapter h2{
+        font-size:2.2rem;
+    }
+
+    .chapter h3{
+        font-size:1.5rem;
+        margin:40px 0 20px;
+    }
+
+    .chapter-card{
+        padding:30px 20px;
+        border-radius:20px;
+    }
+
+    .chapter-intro{
+        font-size:1.05rem;
+    }
+
+    .chapter p{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    .love-quote{
+        font-size:1.05rem;
+        line-height:1.6;
+    }
+
+    .highlight-love,
+    .icecream-line{
+        font-size:1rem;
+    }
+
+    .photo-caption{
+        font-size:1rem;
+    }
+
+    .memory-photo{
+        margin:30px auto;
+        border-radius:15px;
+    }
+
+    .countdown-section{
+        padding:80px 5%;
+    }
+
+    .countdown-section h2{
+        font-size:2.2rem;
+    }
+
+    .final-letter{
+        padding:80px 6%;
+        line-height:2;
+    }
+
+    .final-letter h2{
+        font-size:2.2rem;
+    }
+
+    .final-letter p{
+        font-size:1rem;
+    }
+
+    #countdown div{
+        min-width:90px;
+        padding:20px;
+    }
+
+    #countdown span{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:420px){
+
+    .login-box h1{
+        font-size:2.2rem;
+    }
+
+    .couple-name,
+    .hero h1{
+        font-size:1.9rem;
+    }
+
+    .chapter h2{
+        font-size:1.7rem;
+    }
+
+    .chapter-card{
+        padding:25px 15px;
+    }
+
+    #countdown div{
+        min-width:70px;
+        padding:15px;
+    }
+
+    #countdown span{
+        font-size:1.6rem;
+    }
+}
+
+/* ==========================
+   CHAPTER 1
+========================== */
+
+.chapter{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:100px 20px;
+}
+
+.chapter-card{
+
+    width:90%;
+    max-width:1000px;
+
+    margin:0 auto;
+
+    background:rgba(255,255,255,0.06);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    border-radius:30px;
+
+    padding:60px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.35);
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:opacity 1s ease, transform 1s ease;
+}
+
+.chapter.visible .chapter-card{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+.chapter-label{
+
+    color:#d4af37;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    font-size:14px;
+
+    margin-bottom:20px;
+}
+
+.gold-divider{
+
+    width:80px;
+
+    height:2px;
+
+    background:#d4af37;
+
+    margin:0 auto 30px auto;
+}
+
+.chapter-number{
+
+    display:block;
+
+    color:#d4af37;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+
+    font-size:14px;
+}
+
+.chapter h2{
+
+    color:#d4af37;
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+
+    font-family:'Cormorant Garamond',serif;
+}
+
+.chapter-date{
+
+    color:#ffb6c1;
+
+    font-size:1.2rem;
+
+    font-style:italic;
+
+    margin-bottom:30px;
+}
+
+.chapter-intro{
+
+    font-size:1.3rem;
+
+    line-height:2;
+
+    margin-bottom:35px;
+}
+
+.chapter p{
+
+    color:#f5f5f5;
+
+    font-size:1.15rem;
+
+    line-height:2;
+
+    max-width:750px;
+
+    margin:0 auto 25px auto;
+
+    text-align:center;
+}
+
+.memory-photo{
+
+    width:100%;
+    max-width:500px;
+
+    display:block;
+
+    margin:50px auto;
+
+    border-radius:25px;
+
+    border:3px solid rgba(212,175,55,0.25);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,0.5);
+
+    transition:.4s ease;
+}
+
+.memory-photo:hover{
+
+    transform:scale(1.02);
+}
+
+.chapter-ending{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    margin-top:40px;
+
+    color:#ff6b9d;
+}
+
+.chapter-finish{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    color:#d4af37;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-size:14px;
+}
