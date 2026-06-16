@@ -12,20 +12,37 @@
 <!-- PASSWORD SCREEN -->
 <div id="login-screen">
     <div class="login-box">
-        <h1>💓 A Private Story</h1>
-        <p>Written by Sumit</p>
-        <p>For Sweety</p>
+
+        <div class="login-top-line"></div>
+
+        <p class="login-written-by">Written by Sumit &nbsp;·&nbsp; For Sweety</p>
+
+        <h1 class="login-title">A Private Story</h1>
+
+        <p class="login-tagline">
+            Some stories are meant for one person alone.<br>
+            This one was written only for you.
+        </p>
+
+        <div class="login-divider">
+            <span></span>
+            <span class="login-heart">❤️</span>
+            <span></span>
+        </div>
 
         <input
             type="password"
             id="password"
-            placeholder="Enter Password">
+            placeholder="Enter the password">
 
         <button onclick="checkPassword()">
-            Enter
+            Open
         </button>
 
         <p id="error"></p>
+
+        <div class="login-bottom-line"></div>
+
     </div>
 </div>
 
@@ -190,7 +207,7 @@
             <h2>The Day We Finally Met</h2>
 
             <p class="chapter-date">
-                ❤️ 15 May 2026
+                ❤️ 26 May 2026
             </p>
 
             <p class="chapter-intro">
@@ -813,6 +830,35 @@
         </div>
     </section>
 
+    <!-- WHY I LOVE YOU -->
+    <section class="love-reasons-section">
+
+        <div class="love-reasons-card">
+
+            <div class="chapter-label">A Little Reminder</div>
+
+            <div class="gold-divider"></div>
+
+            <h2>Why I Love You</h2>
+
+            <p class="love-reasons-intro">
+                Tap the button whenever you need a reminder. ❤️
+            </p>
+
+            <div class="reason-display">
+                <p class="reason-text" id="reason-text">
+                    Because your eyes… they don't just look beautiful, they hold me there a second longer than I expect, every single time.
+                </p>
+            </div>
+
+            <button class="reason-btn" onclick="showReason()">
+                Another Reason ❤️
+            </button>
+
+        </div>
+
+    </section>
+
     <!-- COUNTDOWN -->
     <section class="countdown-section">
         <h2>Countdown To Our Wedding ❤️</h2>
@@ -948,6 +994,185 @@
         <p>
             Sumit
         </p>
+    </section>
+
+    <!-- SECRET BUTTON -->
+    <div id="secret-trigger">
+        <p class="secret-hint">✨ You made it to the end ✨</p>
+        <button id="secret-btn" onclick="revealLetter()">
+            A Letter Just For You ❤️
+        </button>
+    </div>
+
+    <!-- HIDDEN LOVE LETTER -->
+    <section id="hidden-letter">
+        <div class="hidden-letter-card">
+
+            <div class="chapter-label">Only For You</div>
+            <div class="gold-divider"></div>
+
+            <h2>The Future I Dream Of</h2>
+
+            <p class="chapter-date">❤️ A Letter From My Heart</p>
+
+            <blockquote class="love-quote">
+                Some letters aren't meant for everyone.
+                This one was always only meant for you.
+            </blockquote>
+
+            <p>
+                Sweety,
+            </p>
+
+            <p>
+                I've been thinking about our future a lot lately.
+
+                Not the big milestones.
+
+                Not the celebrations or the grand moments.
+
+                Just the quiet, ordinary days that I know are going to feel extraordinary simply because you're in them.
+            </p>
+
+            <p>
+                I think about waking up and knowing you're there.
+
+                The way you'll probably steal the blanket and not apologise for it.
+
+                And somehow, I already know I won't even mind.
+
+                Because even the smallest, most ordinary moments —
+
+                feel like everything, when they're with you.
+            </p>
+
+            <p>
+                I think about taking you shopping —
+
+                watching your eyes light up when you find a dress you love.
+
+                Sitting outside the trial room, waiting, and honestly not minding a single second of it.
+
+                Picking out sarees with you.
+
+                Helping you choose. Getting it wrong sometimes. Getting it right sometimes.
+
+                But mostly just loving the way you look in everything you wear.
+
+                And secretly buying you something cute when you're not looking —
+
+                just to see that smile when you open it.
+            </p>
+
+            <p>
+                I think about the long bike rides we'll go on together.
+
+                The open roads, the wind, the feeling of going somewhere with no real plan.
+
+                You sitting behind me, and me just knowing —
+
+                that wherever we end up, it'll be my favourite place
+
+                simply because you're there.
+            </p>
+
+            <p>
+                I think about us exploring new places together.
+
+                Stumbling into streets we've never seen.
+
+                Finding little cafes and trying everything on the menu.
+
+                Getting a little lost and not caring at all.
+
+                Taking photos of everything — the places, the food, each other —
+
+                and building an album of memories that belongs only to us.
+            </p>
+
+            <p>
+                I think about the quiet, intimate moments too.
+
+                The ones that don't need a caption or a memory —
+
+                just the two of us, close, unhurried, present.
+
+                The kind of moments where nothing needs to be said
+
+                because everything is already felt.
+
+                Your head on my shoulder.
+
+                My hand finding yours without thinking.
+
+                Just being together — completely, peacefully, yours and mine.
+            </p>
+
+            <p>
+                I think about being there for every version of you.
+
+                The happy you. The tired you. The excited you.
+
+                The you that lights up over dessert.
+
+                The you that worries too much about everyone else.
+
+                The you that doesn't always say what's on your mind but whose eyes give everything away.
+
+                I want to know every version.
+
+                I want to be there for all of them.
+            </p>
+
+            <p class="highlight-love">
+                The truth is, Sweety —
+
+                I don't know exactly what our future looks like.
+
+                But I know you're in it.
+
+                And somehow, that makes every part of it feel like something worth looking forward to.
+            </p>
+
+            <p>
+                So here's what I promise you.
+            </p>
+
+            <p>
+                I'll be there for the ordinary days as much as the special ones.
+
+                I'll take you places you've never been and make you feel at home there.
+
+                I'll buy you things just because they reminded me of you.
+
+                I'll ride with you into sunsets with no destination and a full heart.
+
+                I'll bring ice cream when words aren't enough.
+
+                I'll hold you close on the nights everything feels heavy.
+
+                And on the days everything feels right,
+
+                I'll make sure you know how grateful I am
+
+                that out of every possible future,
+
+                I get to live mine with you.
+            </p>
+
+            <p class="highlight-love">
+                You are not just my present, Sweety.
+
+                You are every future I ever want to have.
+            </p>
+
+            <p>❤️</p>
+
+            <p>Forever and always yours,</p>
+
+            <p>Sumit</p>
+
+        </div>
     </section>
 
     </div> <!-- story-content -->
